@@ -43,7 +43,6 @@ int main() {
     bms(startNode, endNode, visited, sol);
 
     if (!sol.empty()) {
-        cout << "All Paths Found:\n";
         for (auto &path : sol) {
             for (size_t i = 0; i < path.size(); i++) {
                 cout << path[i];
@@ -52,6 +51,5 @@ int main() {
             cout << endl;
         }
     } else {
-        cout << "No Path Found" << endl;
     }
 }
